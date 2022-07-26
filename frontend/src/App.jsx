@@ -1,17 +1,15 @@
-import './App.css';
+import React from "react";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <>
-      <div className="container bg-primary bg-opacity-25">
-        <div className="row">
-          <div className="col">
-            <section className='text-center'>
-              <h2 className="display-3">App JSX</h2>
-            </section>
-          </div>
-        </div>
-      </div>
+      <section>
+        <Header />
+        <main className="content"></main>
+        <Footer />
+      </section>
     </>
   );
 }
