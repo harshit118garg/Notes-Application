@@ -1,0 +1,39 @@
+.main {
+  min-height: 85%;
+  display: flex;
+  align-items: center;
+  background-color: lightgreen;
+  background-image: url("../../../public/images/img.png");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: color-dodge;
+}
+
+.intro-text {
+  width: 100%;
+  text-align: center;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.landingButton {
+  width: 200px;
+  height: 55px;
+}
+
+@media (max-width: 455px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .btnContainer {
+    flex-direction: column;
+  }
+
+  .landingButton {
+    margin-top: 20px;
+  }
+}

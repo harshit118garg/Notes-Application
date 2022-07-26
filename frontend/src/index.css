@@ -19,12 +19,6 @@ body {
 section {
   width: 100%;
   height: 100vh;
-  /* background: rgb(243,239,127);
-  background: linear-gradient(45deg, rgba(243,239,127,1) 6%, rgba(227,227,227,1) 45%, rgba(255,201,254,1) 100%);  */
-}
-
-.content {
-  min-height: 85%;
 }
 
 a {

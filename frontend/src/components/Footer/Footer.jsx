@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className='bg-dark bg-opacity-25 text-center'>
         <Container>
           <Row>
-              <Col className='text-white py-3'><p>Made with 💙💙 by Harshit Garg || <span className='fw-bold'>AnyWhere Notes</span></p></Col>
+              <Col className='text-white py-3'><p>Made with 💙💙 by Harshit Garg</p></Col>
           </Row>
         </Container>
     </footer>
