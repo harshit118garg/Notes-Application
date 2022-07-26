@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Kanit:wght@300&display=swap');
+
+:root {
+  --font1 : 'Dosis', sans-serif;
+  --font2 : 'Kanit', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font2);
+}
+
+body {
+  background: rgb(243,239,127);
+  background: linear-gradient(45deg, rgba(243,239,127,1) 6%, rgba(227,227,227,1) 45%, rgba(255,201,254,1) 100%); 
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
