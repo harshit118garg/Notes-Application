@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Button from "react-bootstrap/esm/Button";
 import Card from "react-bootstrap/Card";
 import Badge from "react-bootstrap/Badge";
@@ -6,13 +6,25 @@ import Accordion from "react-bootstrap/Accordion";
 import { Link } from "react-router-dom";
 import MainScreen from "../MainScreen/MainScreen";
 import "./MyNotes.css";
-import notes from "../../data/notes";
 
 const MyNotes = () => {
+  const [notes, setNotes] = useState([]);
+
   const deleteHandler = (id) => {
     if (window.confirm("Are you sure...?")) {
     }
   };
+
+  const fetchNotes = async () => {
+    const response = await fetch("http://localhost:5000/api/notes");
+    const data = await response.json();
+    console.log(data);
+    setNotes(data);
+  };
+
+  useEffect(() => {
+    fetchNotes();
+  }, []);
 
   return (
     <>
@@ -24,15 +36,19 @@ const MyNotes = () => {
         </Link>
         <div className="notesList">
           {notes.map((note) => (
-            <Accordion>
-              <div className="mx-5 my-3 shadow" key={note._id}>
+            <Accordion key={note._id}>
+              <div className="mx-5 my-3 shadow">
                 <Accordion.Item eventKey="0">
                   <Card style={{ margin: 20 }}>
                     <Accordion.Header>
-                      <Card.Header style={{ width: "100%", display: "flex", justifyContent: "space-between" }}>
-                        <span className="card-title">
-                          {note.title}
-                        </span>
+                      <Card.Header
+                        style={{
+                          width: "100%",
+                          display: "flex",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <span className="card-title">{note.title}</span>
                         <div className="btns">
                           <Button
                             href={`/note/${note._id}`}
