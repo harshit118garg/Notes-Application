@@ -158,17 +158,21 @@
    top: -0.5em;
  }
  a {
-   color: #158cba;
-   
-    /* color: rgba(255, 255, 255, 0.5); */
+   /* color: #158cba; */
+   color: rgba(255, 255, 255);
     text-decoration: none;
     background-color: transparent;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 100ms ease-in;
   }
   a:hover {
     color: #0d5875;
    
-    /* color: rgba(255, 255, 255, 0); */
-   text-decoration: underline;
+    /* color: rgba(255, 255, 255, 0.5); */
+   text-decoration: none;
  }
  a:not([href]):not([class]) {
    color: inherit;
@@ -4081,6 +4085,7 @@
  .navbar-nav {
    display: -ms-flexbox;
    display: flex;
+   align-items: center;
    -ms-flex-direction: column;
    flex-direction: column;
    padding-left: 0;

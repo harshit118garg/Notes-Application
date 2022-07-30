@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
   res.send(`API is up and running`);
 });
 
-app.get("/api/all/notes", (req, res) => {
+app.get("/api/notes", (req, res) => {
   res.json(notes);
 });
 

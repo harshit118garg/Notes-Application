@@ -7,7 +7,6 @@ import "./LandingPage.css";
 const LandingPage = () => {
   return (
     <>
-      <div className="main">
         <Container>
           <Row>
             <div className="intro-text">
@@ -36,7 +35,6 @@ const LandingPage = () => {
             </div>
           </Row>
         </Container>
-      </div>
     </>
   );
 };

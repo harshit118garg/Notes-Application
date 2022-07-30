@@ -21,6 +21,18 @@ section {
   height: 100vh;
 }
 
+.main {
+  min-height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  background-image: url("../public/images/img.png");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+}
+
 a {
   text-decoration: none;
 }

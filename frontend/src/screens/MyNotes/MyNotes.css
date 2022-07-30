@@ -1,0 +1,35 @@
+
+.notesList {
+    max-width: 800px;
+    height: 450px;
+    overflow: auto;
+}
+
+.card-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+    .notesList {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btns a {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .notesList {
+        width: 320px;
+        height: 350px;
+    }
+    .btns a {
+        margin-bottom: 20px;
+    }
+}

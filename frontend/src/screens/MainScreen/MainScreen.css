@@ -1,0 +1,32 @@
+.mainBack {
+    position: absolute;
+    top: 6rem;
+}
+
+.hr {
+    border: 1px solid #333030;
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 466px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .title {
+        font-size: 1.7rem;
+    }
+}
