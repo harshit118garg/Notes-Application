@@ -5,6 +5,7 @@ import Badge from "react-bootstrap/Badge";
 import Accordion from "react-bootstrap/Accordion";
 import { Link } from "react-router-dom";
 import MainScreen from "../MainScreen/MainScreen";
+// import notes from '../../data/notes';
 import "./MyNotes.css";
 
 const MyNotes = () => {
