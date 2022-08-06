@@ -38,7 +38,7 @@ const registerUser = asyncHandler(async (req, res) => {
       email: newUser.email,
       isAdmin: newUser.isAdmin,
       profileImg: newUser.profileImg,
-      token: generateToken(user._id)
+      token: generateToken(newUser._id)
     });
   } else {
     res.status(400);
