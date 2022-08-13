@@ -1,7 +1,5 @@
-
 .notesList {
-    max-width: 800px;
-    height: 450px;
+    height: 325px;
     overflow: auto;
 }
 
@@ -10,12 +8,6 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-}
-
-@media (max-width: 1500px) {
-    .notesList {
-        height: 300px;
-    }
 }
 
 @media (max-width: 768px) {

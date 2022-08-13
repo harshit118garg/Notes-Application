@@ -1,4 +1,5 @@
 .mainBack {
+    width: 900px;
     position: absolute;
     top: 6rem;
 }
@@ -7,25 +8,43 @@
     border: 1px solid #333030;
 }
 
-@media (max-width: 992px) {
+@media (min-width:769px) and (max-width: 992px) {
+    .mainBack {
+        width: 750px;
+    }
     .title {
         font-size: 3.5rem;
     }
 }
 
 @media (max-width: 768px) {
+    .mainBack {
+        width: 515px;
+    }
     .title {
         font-size: 2.3rem;
     }
 }
 
+@media (max-width: 515px) and (max-width:710px) {
+    .mainBack {
+        width: 475px;
+    }
+}
+
 @media (max-width: 466px) {
+    .mainBack {
+        width: 420px;
+    }
     .title {
         font-size: 2rem;
     }
 }
 
 @media (max-width: 410px) {
+    .mainBack {
+        width: 360px;
+    }
     .title {
         font-size: 1.7rem;
     }

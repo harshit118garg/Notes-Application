@@ -3,6 +3,7 @@ import Button from "react-bootstrap/esm/Button";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import "./LandingPage.css";
+import {Link} from 'react-router-dom';
 
 const LandingPage = () => {
   return (
@@ -17,12 +18,12 @@ const LandingPage = () => {
                 </p>
               </div>
               <div className="btnContainer py-3">
-                <a href="/login">
+                <Link to="/login">
                   <Button size="lg" className="landingButton" variant="warning">
                     Login
                   </Button>
-                </a>
-                <a href="/register">
+                </Link>
+                <Link to="/register">
                   <Button
                     size="lg"
                     className="landingButton"
@@ -30,7 +31,7 @@ const LandingPage = () => {
                   >
                     Sign Up
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </Row>
